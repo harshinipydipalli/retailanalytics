@@ -5,7 +5,6 @@ This project demonstrates a complete **Retail Analytics pipeline**, from raw dat
 
 Technologies & Tools Used: **Python (Pandas, sqlalchemy), SQL (PostgreSQL), Power BI, Excel, VS Code**
 
----
 
 ## ETL & Data Cleaning
 - **Generic Cleaning**: Stripped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
@@ -15,14 +14,12 @@ Technologies & Tools Used: **Python (Pandas, sqlalchemy), SQL (PostgreSQL), Powe
   - **Customers**: Normalized `gender` and email addresses.  
 - **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**. 
 
----
 
 ## PostgreSQL Transformations & EDA
 - Performed additional cleaning and transformations directly in **PostgreSQL**.  
 - Conducted **Exploratory Data Analysis (EDA)** to understand sales, products, and customer behaviors.  
 - Generated KPIs for business performance evaluation.  
 
----
 
 ## Business Analysis & KPIs
 Using the cleaned data, implemented key analytics to solve business problems:
@@ -32,16 +29,12 @@ Using the cleaned data, implemented key analytics to solve business problems:
 3. **Product Performance** – Analyzed sales performance across products to identify best and worst performers.  
 4. **Cohort Retention Analysis** – Measured customer retention over time to evaluate loyalty trends.
 
----
-
 ## Visualization & Reporting
 - Connected **Power BI** directly to PostgreSQL via **Direct Query**.  
 - Built **interactive dashboards** to display KPIs and analytics results.  
 - Provided visual insights into customer segments, sales trends, product performance, and retention.
-
-## Power BI Dashboard Snapshot
-
-![Retail Analytics Dashboard](dashboards/images/dashboard_snapshot.png)
+### Power BI Dashboard Snapshot
+![Retail Analytics Dashboard](dashboards/dashboard_snapshot.png)
 
 ---
 
