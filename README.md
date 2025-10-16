@@ -23,8 +23,8 @@ Monitoring revenue trends and operational KPIs.
   - **Orders**: Updated `order_status` based on business rules, filled missing `payment_method`.  
   - **Reviews**: Converted ratings to numeric, handled missing reviews.  
   - **Customers**: Normalized `gender` and email addresses.  
-- **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**. 
--**Load**: Insert cleaned data into PostgreSQL tables.
+- **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**.
+- **Load**: Insert cleaned data into PostgreSQL tables.
 -**Business Value:**
 Ensures all transactional data is reliable, consistent, and query-ready for analysis.
 
