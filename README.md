@@ -3,11 +3,19 @@
 ## Project Overview
 This project demonstrates a complete **Retail Analytics pipeline**, from raw data cleaning to actionable business insights. The goal was to transform messy retail datasets into meaningful KPIs and visualizations that support data-driven decision-making.
 
-Technologies & Tools Used: **Python (Pandas, sqlalchemy), SQL (PostgreSQL), Power BI, Excel, VS Code**
+## Problem Statement
+A retail company wants to understand its customers, products, and revenue trends to make data-driven decisions. They face challenges in:
+Identifying top customers and high-value segments.
+Understanding product performance and repeat purchase behavior.
+Tracking customer retention and churn risk.
+Monitoring revenue trends and operational KPIs.
+
+## Technologies & Tools Used
+**Python (Pandas, sqlalchemy), SQL (PostgreSQL), Power BI, Excel, VS Code**
 
 
 ## ETL & Data Cleaning
-- **ETL Pipeline (Python → PostgreSQL)**
+- **ETL Pipeline (Used Python to clean and transform → Cleaned data is loaded to PostgreSQL)**
 - **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`).
 - **Transform:**
 - **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
