@@ -15,7 +15,7 @@ Monitoring revenue trends and operational KPIs.
 
 
 ## ETL & Data Cleaning
-- **ETL Pipeline (Used Python to clean and transform → Cleaned data is loaded to PostgreSQL)**
+- **ETL Pipeline (Used Python to clean and transform → Cleaned data is loaded to PostgreSQL by using pandas.to_sql())**
 - **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`).
 - **Transform:**
 - **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
@@ -50,7 +50,7 @@ Using the cleaned data, implemented key analytics to solve business problems:
 - Built **interactive dashboards** to display KPIs and analytics results.  
 - Provided visual insights into customer segments, sales trends, product performance, and retention.
 ### Power BI Dashboard Snapshot
-![Retail Analytics Dashboard](dashboards/dashboard_snapshot.png)
+![Retail Analytics Dashboard](dashboards/DashboardVisualization.png)
 
 
 ## Project Highlights
