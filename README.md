@@ -16,7 +16,7 @@ Monitoring revenue trends and operational KPIs.
 
 ## ETL & Data Cleaning
 - **ETL Pipeline (Used Python to clean and transform → Cleaned data is loaded to PostgreSQL by using pandas.to_sql())**
-- **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`).
+- **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`) and here it creates database structure according to the raw table dataset. We can use dtype_mapping to enforce foriegn key Relationships and primary key
 - **Transform:**
 - **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
 - **Table-specific Cleaning**:
@@ -29,9 +29,6 @@ Monitoring revenue trends and operational KPIs.
 Ensures all transactional data is reliable, consistent, and query-ready for analysis.
 
 ## PostgreSQL Transformations & EDA
--Tables and the structure (schema) created before loading the data from the ETL Pipeline
-- `customers`, `products`, `orders`, `order_items`, `reviews`
-- Relationships enforced using **foreign keys**.
 - Performed additional cleaning and transformations directly in **PostgreSQL**.  
 - Conducted **Exploratory Data Analysis (EDA)** to understand sales, products, and customer behaviors.  
 - Generated KPIs for business performance evaluation.  
