@@ -19,11 +19,11 @@ Monitoring revenue trends and operational KPIs.
 - **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`) and here it creates database structure according to the raw table dataset. We can use dtype_mapping to enforce foriegn key Relationships and primary key.
         
   Tables are:
-    - **customers : customer_id,	name,	email,	signup_date,	city,	state,	country,	dob,	gender**
-    - **products : product_id,	product_name,	category,	price,	cost**
-    - **orders : order_id, order_date,	customer_id,	order_amount,	payment_method,	order_status**
-    - **order_items : order_item_id, order_id,	product_id,	quantity,	unit_price**
-    - **reviews : review_id, order_id,	customer_id,	rating,	review_text,	review_date**
+    - **customers** : customer_id,	name,	email,	signup_date,	city,	state,	country,	dob,	gender
+    - **products** : product_id,	product_name,	category,	price,	cost**
+    - **orders** : order_id, order_date,	customer_id,	order_amount,	payment_method,	order_status
+    - **order_items** : order_item_id, order_id,	product_id,	quantity,	unit_price
+    - **reviews** : review_id, order_id,	customer_id,	rating,	review_text,	review_date
 
 - **Transform:**
 - **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
