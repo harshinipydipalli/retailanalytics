@@ -7,15 +7,23 @@ Technologies & Tools Used: **Python (Pandas, sqlalchemy), SQL (PostgreSQL), Powe
 
 
 ## ETL & Data Cleaning
-- **Generic Cleaning**: Stripped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
+- **ETL Pipeline (Python → PostgreSQL)**
+- **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`).
+- **Transform:**
+- **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
 - **Table-specific Cleaning**:
   - **Orders**: Updated `order_status` based on business rules, filled missing `payment_method`.  
   - **Reviews**: Converted ratings to numeric, handled missing reviews.  
   - **Customers**: Normalized `gender` and email addresses.  
 - **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**. 
-
+-**Load**: Insert cleaned data into PostgreSQL tables.
+-**Business Value:**
+Ensures all transactional data is reliable, consistent, and query-ready for analysis.
 
 ## PostgreSQL Transformations & EDA
+-Tables and the structure (schema) created before loading the data from the ETL Pipeline
+- `customers`, `products`, `orders`, `order_items`, `reviews`
+- Relationships enforced using **foreign keys**.
 - Performed additional cleaning and transformations directly in **PostgreSQL**.  
 - Conducted **Exploratory Data Analysis (EDA)** to understand sales, products, and customer behaviors.  
 - Generated KPIs for business performance evaluation.  
@@ -36,13 +44,11 @@ Using the cleaned data, implemented key analytics to solve business problems:
 ### Power BI Dashboard Snapshot
 ![Retail Analytics Dashboard](dashboards/dashboard_snapshot.png)
 
----
 
 ## Project Highlights
 - Built an **end-to-end analytics workflow** from raw data to business insights.  
 - Automated repetitive data cleaning tasks, saving hours of manual work.  
 - Enabled data-driven decision-making through interactive visualizations.
 
----
 
 ## 📂 Repository Structure
