@@ -16,7 +16,8 @@ Monitoring revenue trends and operational KPIs.
 
 ## ETL & Data Cleaning
 - **ETL Pipeline (Used Python to clean and transform → Cleaned data is loaded to PostgreSQL by using pandas.to_sql())**
-- **Extract:** Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`) and here it creates database structure according to the raw table dataset. We can use dtype_mapping to enforce foriegn key Relationships and primary key.
+- **Extract**                                                                                                      
+  Read raw CSV files (`customers`, `products`, `orders`, `order_items`, `reviews`) and here it creates database structure according to the raw table dataset. We can use dtype_mapping to enforce foriegn key relationships and primary keys.
         
   Tables are:
     - **customers** : customer_id,	name,	email,	signup_date,	city,	state,	country,	dob,	gender
@@ -25,14 +26,15 @@ Monitoring revenue trends and operational KPIs.
     - **order_items** : order_item_id, order_id,	product_id,	quantity,	unit_price
     - **reviews** : review_id, order_id,	customer_id,	rating,	review_text,	review_date
 
-- **Transform:**
-- **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.  
-- **Table-specific Cleaning**:
+- **Transform**                                                                                                          
+ **Generic Cleaning**: Cleaned and standardized  100K+ records of dataset. Striped strings, replaced empty/blank/nan values with `NA`, converted date columns, filled numeric nulls with 0.                                                                
+ **Table-specific Cleaning**:
   - **Orders**: Updated `order_status` based on business rules, filled missing `payment_method`.  
   - **Reviews**: Converted ratings to numeric, handled missing reviews.  
-  - **Customers**: Normalized `gender` and email addresses.  
-- **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**.
-- **Load**: Insert cleaned data into PostgreSQL tables.
+  - **Customers**: Normalized `gender` and email addresses.                                                                    
+ **Automation**: Built Python ETL scripts to extract CSVs, clean data, and load into **PostgreSQL**.
+- **Load**:                                                                                      
+ Insert cleaned data into PostgreSQL tables.
 -**Business Value:**
 Ensures all transactional data is reliable, consistent, and query-ready for analysis.
 
