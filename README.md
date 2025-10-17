@@ -1,4 +1,4 @@
-# 🛍️ Retail Analytics Project
+# 🛍️ End to End ETL Data Pipeline Retail Analytics Project
 
 ## Project Overview
 This project demonstrates a complete **Retail Analytics pipeline**, from raw data cleaning to actionable business insights. The goal was to transform messy retail datasets into meaningful KPIs and visualizations that support data-driven decision-making.
