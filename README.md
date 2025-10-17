@@ -57,7 +57,7 @@ Using the cleaned data, implemented key analytics to solve business problems:
 - Built **interactive dashboards** to display KPIs and analytics results.  
 - Provided visual insights into customer segments, sales trends, product performance, and retention.
 ### Power BI Dashboard Snapshot
-![Retail Analytics Dashboard](dashboards/DashboardVisualization.png)
+![Retail Analytics Dashboard](dashboard/DashboardVisualization.png)
 
 
 ## Project Highlights
