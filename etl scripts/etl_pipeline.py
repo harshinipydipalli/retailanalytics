@@ -1,6 +1,5 @@
 import pandas as pd
 from sqlalchemy import Date, create_engine, String, Numeric
-from textblob import TextBlob
 import os
 import logging
 
@@ -268,4 +267,5 @@ for table_name, file_path in table_files.items():
 
     except Exception as e:
         logging.error(f"Error in ETL for {table_name}: {e}")
+
         print(f"Error in ETL for {table_name}: {e}")
